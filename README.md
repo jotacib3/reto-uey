@@ -23,28 +23,21 @@ npm run dev
 
 1- Modela las clases necesarias que representan los productos de tipo Simple, Rentable y Espacio descritos en el enunciado.
 
-2- En el archivo /data/index.ts agrega una instancia de cada tipo de productos en el array products que se exporta.
+2- En el archivo /data/index.ts agrega una instancia de cada tipo de productos en el array products que se exporta. También un producto rentable y uno de espacio en las constantes de este tipo que se exportan
 
-3- Diseña una consulta(API REST) GET al endpoint /products para obtener la información de los productos. Actualmente tenemos instalada la última versión de la librería axios.
+3- Diseña una consulta(API REST) GET al endpoint http://localhost:4000/products para obtener la información de los productos. Actualmente tenemos instalada la última versión de la librería axios.
 
-**Bonus**:
-Agrega un filtro por algún campo que prefieras para tus productos.
+4- Diseña una consulta GraphQL a la query __products__ para obtener la información de los productos. Actualmente tenemos instalada la última versión de la librería @apollo/client.
 
-4- Diseña una consulta GraphQL a query __products__ para obtener la información de los productos. Actualmente tenemos instalada la última versión de la librería @apollo/client.
-
-**Bonus**:
-Agrega un filtro por algún campo que prefieras para tus productos.
-
-(Habilidades buscadas: Diseño de consultas GraphQL, uso de filtros y paginación)
-
-5- Maqueta una vista que muestre los tres productos que obtendras usando graphql preferiblemente. Tienes instalada la librería [Material UI](https://mui.com)
-
+5- Maqueta una vista que muestre los tres productos que obtendrás usando graphql preferiblemente. Tienes instalada la librería [Material UI](https://mui.com)
 
 6- Maquetar la vista detalle para el producto rentable:
 Debes crear una vista que muestre los detalles de un producto rentable (bookable), incluyendo la información del producto, el precio y la disponibilidad en una ubicación y fecha determinadas. Puedes utilizar bibliotecas de componentes como Material UI para diseñar la interfaz de usuario.(Habilidades buscadas: Diseño de interfaces de usuario, uso de bibliotecas de componentes)
+Si usa rest api la url sería http://localhost:4000/rentable/:id donde id es el id del producto rentable que instanciaste en el ejercicio 2.
 
 7- Maquetar la vista detalle para el producto de tipo espacio:
 Debes crear una vista que muestre los detalles de un espacio para eventos, incluyendo la información del producto, el precio y la disponibilidad en una ubicación y fecha determinadas. Puedes utilizar bibliotecas de componentes como Material UI para diseñar la interfaz de usuario.(Habilidades buscadas: Diseño de interfaces de usuario, uso de bibliotecas de componentes)
+Si usa rest api la url sería http://localhost:4000/space/:id donde id es el id del producto rentable que instanciaste en el ejercicio 2.
 
 8- Integrar el API de Google Map(Bonus)
 Este ejercicio es opcional y consiste en integrar la API de Google Maps en el sistema de productos para mostrar la ubicación de los espacios y los productos rentables en un mapa interactivo. Para lograr esto, debes utilizar la documentación de la API de Google Maps y las bibliotecas de JavaScript necesarias para conectar el sistema de productos con el mapa interactivo.

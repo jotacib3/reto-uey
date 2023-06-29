@@ -7,7 +7,13 @@ export const products = [
 ];
 
 // Sustituir por una instancia del tipo de producto rentable
-export const rentable = {};
+export const rentable = {
+    id: 2,
+    name: 'Producto Rentable 1',
+};
 
 // Sustituir por una instancia del tipo de producto espacio
-export const space = {};
+export const space = {
+    id: 3,
+    name: 'Producto Espacio 1',
+};
